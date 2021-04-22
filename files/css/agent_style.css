@@ -1,0 +1,20 @@
+/*------AGENT SITE SPECIFIC STYLES------*/
+
+/*Do not display nav social links*/
+
+.navbar-right {
+	display: none;
+}
+
+/*Do not display Instagram feed*/
+
+.block.media h2:last-of-type,
+.block.media .juicer-feed {
+	display: none;
+}
+
+/*Do not display footer social links*/
+
+.footer_links {
+	display: none !important;
+}
