@@ -688,26 +688,15 @@ body.no_scroll {
   font-size: 16px;
 }
 
-/*Hover effects*/
+/*Select effects*/
 
-.packages .package_link:hover {
-  transform: perspective(999px) scale3d(1.03, 1.03, 1) !important;
-  width: 40% !important;
-  opacity: 1;
-}
 .packages .package_link.make_center {
   transform: perspective(999px) scale3d(1.03, 1.03, 1);
   width: 40%;
   opacity: 1;
 }
-.packages .package_link:hover .package {
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important;
-}
 .packages .package_link.make_center .package {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-.packages .package_link:hover .package img {
-  transform: translateZ(0) perspective(999px) scale3d(1, 1, 1) translate(-50%, 0%) !important;
 }
 .packages .package_link.make_center .package img {
   transform: translateZ(0) perspective(999px) scale3d(1, 1, 1) translate(-50%, 0%);
@@ -1314,6 +1303,22 @@ footer a:hover {
     height: 110vh;
   }
 } 
+
+/*APPLY PACKAGE HOVER EFFECTS TABLET AND DESKTOP ONLY*/
+
+@media only screen and (min-width: 991px) {
+  .packages .package_link:hover {
+    transform: perspective(999px) scale3d(1.03, 1.03, 1) !important;
+    width: 40% !important;
+    opacity: 1;
+  }
+  .packages .package_link:hover .package {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important;
+  }
+  .packages .package_link:hover .package img {
+    transform: translateZ(0) perspective(999px) scale3d(1, 1, 1) translate(-50%, 0%) !important;
+  }
+}
 @media only screen and (max-width: 991px) {
   .parallax {
     top: -50vh;
@@ -1519,6 +1524,7 @@ footer a:hover {
   }
   .slider:hover {
     transform: unset;
+    box-shadow: unset;
   }
 
   /*PACKAGES SECTION*/

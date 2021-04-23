@@ -18,3 +18,13 @@
 .footer_links {
 	display: none !important;
 }
+
+/*Do not display contact form and footer*/
+#contact,
+#contact ~ div {
+	display: none;
+}
+
+footer {
+	background: rgb(23,23,30);
+}

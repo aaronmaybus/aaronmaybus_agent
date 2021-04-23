@@ -23,11 +23,13 @@ function hoverPackages(){
   }
 }
 function selectPackages(){
-  $('.package_link').click(function(){
-      $(this).addClass('make_center');
-      $(".package_link").not(this).addClass("fade_out_permanent");
-      $(".package_link").not(this).removeClass("make_center");
-  });
+  if($(window).width() > 991){
+    $('.package_link').click(function(){
+        $(this).addClass('make_center');
+        $(".package_link").not(this).addClass("fade_out_permanent");
+        $(".package_link").not(this).removeClass("make_center");
+    });
+  }
 }
 function bindVelocity(){
   // bind click event to all internal page anchors
