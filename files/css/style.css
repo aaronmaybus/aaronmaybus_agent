@@ -1475,7 +1475,7 @@ footer a:hover {
   .navbar-nav {
     margin: 0px -15px;
     height: 100vh;
-    background: #161622;
+    background: linear-gradient(0deg,#2a2936,#191926 90%);
     width: 100%;
     margin: 0;
   }
