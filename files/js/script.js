@@ -133,10 +133,9 @@ $(window).resize(function () {
 });
 Pace.restart();
 Pace.on("done", function(){
-
+  
   // Allow scrolling
   $('body').removeClass('no_scroll');
-  var y = $(window).scrollTop();  //your current y position on the page
   $('.pace').addClass('disappear');
   $('.loading').addClass("disappear");
 
